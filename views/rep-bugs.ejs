@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Bugs</title>
+    <style>
+        body {
+            background-color: #0D1B2A;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 50%;
+            background-color: #1E2A38;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        label {
+            font-size: 30px;
+            width: 30%; 
+            text-align: left;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 25px;
+            margin: 10px;
+        }
+        textarea {
+            height: 4em; 
+            resize: none;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px #007bff;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 22px;
+            border: none;
+            align-self: center;
+            margin: 20px 0px 20px 0px; 
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Report Your Issue</h1>
+    <form method="post" action="/bug-reported">
+        <div class="form-group">
+            <label for="name">Name</label>        
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact No</label>
+            <input type="text" name="contact" id="contact" placeholder="Enter your contact number" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" placeholder="Describe the issue" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="smallpages.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="loginbody">
+    <div class="pg">
+    <form class="form1" action="index.ejs" method="post">
+       <div class="loginimg"><div class="divimg">.</div></div> 
+    <input type="text" name="username" maxlength="12" minlength="5" id="username" class="conntent  up" placeholder="enter username..." required>
+    <input type="password" name="password" id="password" class="conntent" required placeholder="enter password...">
+    <button class="loginbutt mar" >log in</button>
+    <a href="index.ejs" class="log_a"> forgot password ?</a>
+    </form>
+    <button class="crtacc" >create account</button>
+</div>
+
+<div class="hiddendiv hidediv ">
+    <form class="form2" action="login.ejs" method="post">
+    <div class="pg2" >
+        <div class="loginimg animation5"><div class="divimg">.</div></div> 
+     <input type="text" name="username2" maxlength="12" minlength="5" required class="animation1 conntent up" placeholder="create username...">
+     <input type="password" name="password2" class="animation2 conntent" required placeholder="create password...">
+     <input type="number" name="mobileno" class="animation3 conntent" placeholder=" enter mobile number">
+     <button class="crtacc animation4" type="submit">create</button>
+    </form>
+    </div>
+</div>
+<script src="smallpages.js"></script>
+</body>
+</html>

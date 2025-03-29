@@ -1,0 +1,315 @@
+
+.NAVBAR{
+    border-radius: 10px;
+    height: 4.5vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: BLACK;
+    color: aliceblue;
+    padding-right: 2vmin;
+    padding-left: 2vmin;
+}
+
+@keyframes ul {
+   from {
+     text-decoration: none;
+   } to {
+    text-decoration:2px cyan underline;
+   }
+}
+
+.NAVBAR a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.NAVBAR a:hover { animation: ul 1s ease-in-out infinite ;}
+
+.navser{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    height: 70%;
+} 
+
+#navserinp{
+    background-color: #1E2A38; 
+    color: white;
+    border: 1px solid #34495E;
+    border-radius: 10px;
+    height: 3vmin;
+    width: 80%;
+}
+
+#navserinp::placeholder { color: #B0BEC5;}
+
+#navserbut{
+    background-color: #1E2A38;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 4vmin;
+    width: 4vmin;
+    margin-left: 1vmin;
+}
+
+.sociall-div{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 70%;
+} 
+#insta{background-color: #E1306C;}
+#facebook{background-color: #3B5998}
+#whatsapp{background-color: #25D366;}
+
+.sociall-button ,sociall-button i {
+    background-color: #1E2A38;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 4vmin;
+    width: 4vmin;
+    margin-left: 1vmin;
+    font-size: 2vmin;
+}
+
+@keyframes expand {
+    from {
+       width: 80%;
+     
+    } to {
+        width: 20000%;
+       
+    }
+}
+
+.useri{ font-size: 1.5vmin;}
+
+.search-expand{ animation: expand infinite ease 2S ;}
+
+.mdbtn{
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 8%;
+}
+
+.bar i {
+    color: aliceblue;
+    font-size: 2vmin;
+}
+
+.bardiv{
+    height: 100%;
+    width: 10%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    z-index: 5;
+    right: 0%;
+}
+
+.bardiv a { color: white;}
+
+.hidebardiv {  display: none;}
+
+.baropt{
+   font-size: 2vmin;
+    display: flex;
+    width: 100%;
+    height: 8%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1s;
+}
+
+.baropt::before {
+    content: '';
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale( 0);
+     border-radius: 50%;
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+.baropt:hover:before {
+    transform: scale(15);
+    border-radius: 50%;
+}
+
+.content{
+    aspect-ratio: 5;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color:transparent;
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.contentimg1{
+    background-image:url("https://static.vecteezy.com/system/resources/previews/022/272/441/original/abstract-color-polygon-background-design-abstract-geometric-origami-style-with-gradient-free-vector.jpg");
+} */
+
+.contentimg2{
+    background-image:url("https://th.bing.com/th/id/OIP.uKx8JG7iCON9Zv0hXkJcHgHaFj?rs=1&pid=ImgDetMain");
+}
+
+.ANIME {
+    aspect-ratio: 1;
+    margin: 1.5%;
+    border-radius: 10px;
+    height: 450px;
+    width: 225px;
+    background-color: #0D1B2A;
+    border: 1px solid black;
+}
+
+.ANIME_button { 
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #778DA9;
+    font-size: 20px;
+    margin-left:25%;
+    border-radius: 10px;
+}
+
+.lkdiv {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+    margin-left: 80%;
+    margin-top: 12%;
+    border-radius: 50%;
+    height: 7%;
+    width: 14%;
+    background-color: white;
+}
+
+.ANIME i {margin-left:10%;}
+
+.aniimg {
+    background-size: cover;
+    border-radius: 10%;
+    border: 2px solid black;
+    height: 50%;
+    width: 80;
+    margin: 5% 10% 45% 10%;
+    background-size:cover ;
+}
+
+.surf-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+.surf-buttons button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+.surf-buttons button:hover {
+    background-color: #0056b3;
+}
+.surf-buttons a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.footer {
+    border-radius: 10px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: BLACK;
+}
+
+.footer a{
+    padding: 20px;
+    text-decoration: none;
+    color: white; 
+} 
+
+@media (max-width:600px) {
+    .bar i {
+        font-size: 3vmin;
+    }
+ 
+    .ANIME {
+        height: 410%;
+        width: 40%; 
+    } 
+
+    .bardiv{
+        width: 30%;
+    }
+
+    .useri{ font-size:2.5vmin;}
+
+    .footer a{
+       font-size: 2.2vmin;
+    } 
+}
+
+.wtbtn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 50px;
+    /* padding: 15px 30px; */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+  
+  .wtbtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+  
+  .wtbtn a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+  .wtbtn i {
+    margin-left: 5px;
+}
+ 
+.lkdiv {
+    color: black;
+}
+  
+  body.dark .lkdiv {
+    color: black; 
+}
+  

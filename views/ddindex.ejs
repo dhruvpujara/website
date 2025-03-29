@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="html.CSS" />
+    <link rel="stylesheet" href="imp.css" />
+</head>
+<body>
+    <header>
+        <div class="NAVBAR">
+            <% if (typeof username !== "undefined" && username) { %>
+                <div class="userdiv"><i class="fa-regular fa-user useri"></i> <%= username %></div>
+               
+            <% } else { %>
+                <p><i class="fa-solid fa-users-slash useri"></i></p>
+            <% } %>
+            <div class="navser">
+                <input placeholder="search" id="navserinp" />
+                <button id="navserbut"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="sociall-div">
+                <button class="sociall-button" id="insta"><i class="fa-brands fa-instagram"></i></button>
+                <button class="sociall-button" id="facebook"><i class="fa-brands fa-facebook"></i></button>
+                <button class="sociall-button" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></button>
+            </div>
+            <div class="bar"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="content contentimg1">
+        <div class="bardiv hidebardiv">
+            <a href="login.html" class="baropt">LOGIN</a>
+            <a href="w2g.html" class="baropt">watch together <i class="fa-solid fa-wifi"></i></a>
+            <a href="trending.html" class="baropt">TRENDING</a>
+            <a href="wishlist.html" class="baropt">WISHLIST</a>
+            <button class="mdbtn baropt">mode</button>
+        </div>
+    </div>
+
+    <div class="surf-buttons">
+        <button><a href="index2.ejs"><i class="fa-solid fa-play"></i></a></button>
+    </div>
+
+    <footer class="footer">
+        <a class="contactus">contact us <i class="fa-solid fa-phone"></i></a>
+        <a>copyrights <i class="fa-regular fa-copyright"></i></a>
+        <a class="repbug">report bugs <i class="fa-solid fa-wrench"></i></a>
+        <a>suggest content <i class="fa-regular fa-comment"></i></a>
+    </footer>
+    <script src="ddlinks.js"></script>
+    <script src="ddindex.js"></script>
+</body>
+</html>

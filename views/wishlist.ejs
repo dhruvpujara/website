@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Favourites</title>
+    <link rel="stylesheet" href="html.CSS" />
+    <link rel="stylesheet" href="imp.css" />
+    <link rel="stylesheet" href="smallpages.css">
+    <style>
+        .wishbody {
+            background-color: #0D1B2A;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .wishh1 {
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .wish {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .anime-det-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            height: 40vh;
+            background-color: #1E2A38;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            color: white;
+            padding: 20px;
+        }
+        .anime-det-img {
+            width: 20%;
+            height: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        .anime-det-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .anime-det-info {
+            width: 60%;
+            padding: 20px;
+            font-size: 26px;
+        }
+        .anime-det-container h1 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body class="wishbody">
+    <h1 class="wishh1">Your Favourites...</h1>
+    <div class="wish">
+        <% favorites.forEach(fav => { %>
+            <div class="anime-det-container">
+                <div class="anime-det-img">
+                    <img src="<%= fav.Image %>" alt="<%= fav.Name %>">
+                </div>
+                <div class="anime-det-info">
+                    <h1><%= fav.Name %></h1>
+                    <p>Episodes: <%= fav.episodes %></p>
+                    <p>Genre: <%= fav.genre %></p>
+                    <p>Status: <%= fav.status %></p>
+                    <p><%= fav.description %></p>
+                    <!-- Uncomment the following lines if you want to include more details -->
+                    <!-- <p>Rating: <%= fav.rating %></p> -->
+                    <!-- <p>Year: <%= fav.year %></p> -->
+                    <!-- <p>Season: <%= fav.season %></p> -->
+                    <!-- <p>Studio: <%= fav.studio %></p> -->
+                    <!-- <p>Source: <%= fav.source %></p> -->
+                    <!-- <p>Duration: <%= fav.duration %></p> -->
+                    <!-- <p>Trailer: <a href="<%= fav.trailer %>" target="_blank">Watch Trailer</a></p> -->
+                </div>
+                <button class="btn" onclick="window.location.href='<%= fav.View %>'">WATCH</button>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

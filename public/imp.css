@@ -1,0 +1,26 @@
+.light {
+    background-color: black;
+    color: white;
+}
+
+.dark{
+    background-color: white;
+    color: black;
+   
+}
+/* .border:hover{
+    border: 2px outset gold;
+} */
+
+.navborder{
+    border: 2px solid white;
+}
+
+.footborder{
+    border: 2px solid white;
+}
+
+.border:hover{
+    border: 2px solid cyan ;
+    box-shadow: 0PX 0PX 15PX cyan;
+}

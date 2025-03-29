@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Logged In</title>
+    <style>
+        body {
+            background-color: #0D1B2A;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .message {
+            text-align: center;
+        }
+        .message h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .message p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .login-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+        }
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <h1>Oops!</h1>
+        <p>Not logged in. Please login first.</p>
+        <a href="/login" class="login-button">Login</a>
+    </div>
+</body>
+</html>

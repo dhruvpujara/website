@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0D1B2A;
+    margin: 0;
+    padding: 0;
+}
+
+.home-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.wel-div, .safety-div {
+    color: white;
+    background-color: #1E2A38;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.wel-div h1, .safety-div h1 {
+    margin: 0 0 10px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.wel-div p, .safety-div p {
+    margin: 10px 0 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+.button {
+    border-radius: 15px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+    height: 40px; /* Adjusted height */
+    width: auto; /* Adjusted width */
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    line-height: 40px; /* Adjust line height for vertical alignment */
+}
+
+.button:hover {
+    box-shadow: 0 0 12px rgba(255, 75, 43, 0.8);
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.button:hover::before {
+    width: 200%;
+    height: 200%;
+}
