@@ -90,3 +90,19 @@ body {
     width: 200%;
     height: 200%;
 }
+
+@media  (max-width: 600px) {
+    .wel-div h1, .safety-div h1 { font-size: 4.5vmin; }
+
+    .wel-div p, .safety-div p { font-size: 3.2vmin; }
+
+    .button {
+        font-size: 3.5vmin;
+        padding: 4px 14px;
+    }
+    
+    .wel-div, .safety-div {
+        width: 90%;
+        padding: 10px;
+    }
+}
