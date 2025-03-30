@@ -34,6 +34,7 @@ animes2.forEach((anime2) => {
     wtbtn.innerText = "WATCH";
     wtbtn.classList.add("wtbtn");
     wtbtn.classList.add("ANIME_button");
+    wtbtn.classList.add("ANIME_button2");
    
     wtbtn.addEventListener("click", () => {
       const animedet = `/anime-det2.ejs/${anime2.Id}`;
