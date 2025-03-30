@@ -11,6 +11,8 @@
     padding-left: 2vmin;
 }
 
+.NAVBAR2{ height: 5.5vmin;}
+
 @keyframes ul {
    from {
      text-decoration: none;
