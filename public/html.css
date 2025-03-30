@@ -315,10 +315,12 @@
 
     .bardiv{ width: 35%; }
 
-    .NAVBAR{height:8vmin; }
+    .NAVBAR{height:7vmin; }
 
     .surf-buttons {
         font-size: 1.5vmin;
         padding: 5px 10px; 
     }
+
+    .userdiv{font-size: 3.5vmin;}
 }
