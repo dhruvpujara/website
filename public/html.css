@@ -78,6 +78,13 @@
     font-size: 2vmin;
 }
 
+.sociall-button1{
+     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes expand {
     from {
        width: 80%;
