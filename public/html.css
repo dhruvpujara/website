@@ -255,32 +255,10 @@
     color: white; 
 } 
 
-@media (max-width:600px) {
-    .bar i {
-        font-size: 3vmin;
-    }
- 
-    .ANIME {
-        height: 410%;
-        width: 40%; 
-    } 
-
-    .bardiv{
-        width: 30%;
-    }
-
-    .useri{ font-size:2.5vmin;}
-
-    .footer a{
-       font-size: 2.2vmin;
-    } 
-}
-
 .wtbtn {
     background: linear-gradient(135deg, #ff416c, #ff4b2b);
     border: none;
     border-radius: 50px;
-    /* padding: 15px 30px; */
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -313,3 +291,28 @@
     color: black; 
 }
   
+
+@media (max-width:600px) {
+    .bar i { font-size: 3vmin; }
+ 
+    .ANIME {
+        height: 410%;
+        width: 40%; 
+    } 
+
+    .bardiv{ width: 30%; }
+
+    .useri{ font-size:2.5vmin;}
+
+    .footer a{ font-size: 2.2vmin; }  
+
+    .wtbtn{
+        padding: 5px 10px;
+        font-size: 3vmin;}
+
+    .navser{ width: 50%;  } 
+
+    .baropt{ font-size: 3vmin;}
+
+    .bardiv{ width: 35%; }
+}
