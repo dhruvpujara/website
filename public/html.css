@@ -112,6 +112,10 @@
     right: 0%;
 }
 
+.bardiv2{
+    width: 30%;
+}
+
 .bardiv a { color: white;}
 
 .hidebardiv {  display: none;}
@@ -129,6 +133,8 @@
     overflow: hidden;
     z-index: 1s;
 }
+
+.baropt2{ font-size: 3.5vmin;}
 
 .baropt::before {
     content: '';
@@ -178,6 +184,11 @@
     width: 225px;
     background-color: #0D1B2A;
     border: 1px solid black;
+}
+
+.ANIME2 {
+    height: 700px;
+    width: 380px;
 }
 
 .ANIME_button { 
