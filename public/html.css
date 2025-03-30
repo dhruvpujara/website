@@ -297,8 +297,7 @@
  
     .ANIME {
         height: 410%;
-        width: 40%; 
-    } 
+        width: 40%;  } 
 
     .bardiv{ width: 30%; }
 
@@ -315,4 +314,11 @@
     .baropt{ font-size: 3vmin;}
 
     .bardiv{ width: 35%; }
+
+    .NAVBAR{height:8vmin; }
+
+    .surf-buttons {
+        font-size: 1.5vmin;
+        padding: 5px 10px; 
+    }
 }
