@@ -88,6 +88,7 @@
 }
   
 .loginbutt{
+    font-size: 2vmin;
     border-radius: 15px;
     background: linear-gradient(45deg, #ff416c, #ff4b2b);
     color: #fff;
