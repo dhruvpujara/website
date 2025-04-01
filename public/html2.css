@@ -1,8 +1,4 @@
 
-
-
-
-
 .NAVBAR{
     border-radius: 10px;
     height: 4.5vmin;
@@ -14,6 +10,8 @@
     padding-right: 2vmin;
     padding-left: 2vmin;
 }
+
+.NAVBAR2{ height: 6.5vmin;}
 
 @keyframes ul {
    from {
@@ -80,6 +78,13 @@
     font-size: 2vmin;
 }
 
+.sociall-button1{
+     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes expand {
     from {
        width: 80%;
@@ -90,7 +95,7 @@
     }
 }
 
-.useri{ font-size: 1.5vmin;}
+.useri{ font-size: 2vmin;}
 
 .search-expand{ animation: expand infinite ease 2S ;}
 
@@ -106,6 +111,8 @@
     font-size: 2vmin;
 }
 
+
+
 .bardiv{
     height: 100%;
     width: 10%;
@@ -114,6 +121,10 @@
     position: absolute;
     z-index: 5;
     right: 0%;
+}
+
+.bardiv2{
+    width: 30%;
 }
 
 .bardiv a { color: white;}
@@ -133,6 +144,8 @@
     overflow: hidden;
     z-index: 1s;
 }
+
+.baropt2{ font-size: 3.5vmin;}
 
 .baropt::before {
     content: '';
@@ -184,6 +197,11 @@
     border: 1px solid black;
 }
 
+.ANIME2 {
+    height: 700px;
+    width: 380px;
+}
+
 .ANIME_button { 
     display: flex;
     justify-content:space-evenly;
@@ -194,19 +212,9 @@
     border-radius: 10px;
 }
 
-.lkdiv {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    position: relative;
-    margin-left: 80%;
-    margin-top: 12%;
-    border-radius: 50%;
-    height: 7%;
-    width: 14%;
-    background-color: white;
-}
+.ANIME_button2{ font-size: 4vmin;}
+
+
 
 .ANIME i {margin-left:10%;}
 
@@ -286,45 +294,9 @@
   .wtbtn i {
     margin-left: 5px;
 }
- 
-.lkdiv {
-    color: black;
-}
+
   
   body.dark .lkdiv {
     color: black; 
 }
   
-
-@media (max-width:600px) {
-    .bar i { font-size: 3vmin; }
- 
-    .ANIME {
-        height: 410%;
-        width: 40%;  } 
-
-    .bardiv{ width: 30%; }
-
-    .useri{ font-size:2.5vmin;}
-
-    .footer a{ font-size: 2.2vmin; }  
-
-    .wtbtn{
-        padding: 5px 10px;
-        font-size: 3vmin;}
-
-    .navser{ width: 50%;  } 
-
-    .baropt{ font-size: 3vmin;}
-
-    .bardiv{ width: 35%; }
-
-    .NAVBAR{height:7vmin; }
-
-    .surf-buttons {
-        font-size: 1.5vmin;
-        padding: 5px 10px; 
-    }
-
-    .userdiv{font-size: 3.5vmin;}
-}
