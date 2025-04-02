@@ -29,11 +29,16 @@
         </form> 
         </div>
     </div>
-    <div class="anime-det-btns">
-        <a href="<%= anime.View%>" class="btn">hi anime</a>
-        <% if (anime['9ANIME']) { %>
-            <a href="<%= anime['9ANIME'] %>" class="btn">9ANIME</a>
-        <% } %>
+   
+<!-- Add the heading here -->
+<h2 class="watch-links-heading">Watch Links</h2>
+
+<div class="anime-det-btns">
+    <a href="<%= anime.View %>" class="btn">hi anime</a>
+    <% if (anime['9ANIME']) { %>
+        <a href="<%= anime['9ANIME'] %>" class="btn">9ANIME</a>
+    <% } %>
+</div>
         <!-- <form action="/anime/delete/<%= anime._id %>?_method=DELETE" method="POST">
             <button class="btn">Delete</button>
         </form> -->
@@ -142,6 +147,14 @@
                 font-size: 3vmin;  }
 
         }
+        .watch-links-heading {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 20px 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
     </style>
 </body>
 </html>
