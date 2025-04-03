@@ -11,7 +11,7 @@
   "main": "BACK.JS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon BACK.JS"
+    "start": "node BACK.JS"
   },
   "author": "DHRUV",
   "license": "ISC",
