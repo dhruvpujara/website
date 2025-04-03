@@ -1,0 +1,81 @@
+
+.anime-det-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0D1B2A;
+    font-family: 'Roboto', sans-serif;
+}
+.anime-det-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    background-color: #1E2A38;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 5%;
+    box-shadow: 0PX 0PX 15PX cyan;
+    margin-top: 15%;
+    margin-top: 20px;
+}
+.anime-det-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+.anime-det-img {
+    width: 100%;
+    height: 800px; /* Set a fixed height for the images */
+    border-radius: 15px;
+}
+.anime-det-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.anime-det-info {
+    width: 85%;
+    padding: 5%;
+    font-size: 20px;
+}
+.anime-det-container h1 {
+    font-size: 9vmin;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.anime-det-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px 20px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.watch-links-heading {
+text-align: center;
+font-size: 28px;
+font-weight: bold;
+color: #ffffff;
+margin: 20px 0;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
