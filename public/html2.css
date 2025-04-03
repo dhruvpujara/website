@@ -1,7 +1,7 @@
 
 .NAVBAR{
     border-radius: 10px;
-    height: 4.5vmin;
+    height: 6vmin;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,23 +11,7 @@
     padding-left: 2vmin;
 }
 
-.NAVBAR2{ height: 6.5vmin;}
 
-@keyframes ul {
-   from {
-     text-decoration: none;
-   } to {
-    text-decoration:2px cyan underline;
-   }
-}
-
-.NAVBAR a{
-    padding: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-.NAVBAR a:hover { animation: ul 1s ease-in-out infinite ;}
 
 .navser{
     display: flex;
@@ -95,7 +79,7 @@
     }
 }
 
-.useri{ font-size: 2vmin;}
+.useri{ font-size: 2.5vmin;}
 
 .search-expand{ animation: expand infinite ease 2S ;}
 
@@ -108,24 +92,9 @@
 
 .bar i {
     color: aliceblue;
-    font-size: 2vmin;
+    font-size: 2.5vmin;
 }
 
-
-
-.bardiv{
-    height: 100%;
-    width: 10%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    position: absolute;
-    z-index: 5;
-    right: 0%;
-}
-
-.bardiv2{
-    width: 30%;
-}
 
 .bardiv a { color: white;}
 
@@ -145,26 +114,7 @@
     z-index: 1s;
 }
 
-.baropt2{ font-size: 3.5vmin;}
 
-.baropt::before {
-    content: '';
-    height: 10%;
-    width: 10%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: rgba(0, 0, 0, 0.3);
-    transform: scale( 0);
-     border-radius: 50%;
-    transition: all .5s ease;
-    z-index: -1;
-}
-
-.baropt:hover:before {
-    transform: scale(15);
-    border-radius: 50%;
-}
 
 .content{
     aspect-ratio: 5;
@@ -181,7 +131,7 @@
 
 .contentimg1{
     background-image:url("https://static.vecteezy.com/system/resources/previews/022/272/441/original/abstract-color-polygon-background-design-abstract-geometric-origami-style-with-gradient-free-vector.jpg");
-} */
+} 
 
 .contentimg2{
     background-image:url("https://th.bing.com/th/id/OIP.uKx8JG7iCON9Zv0hXkJcHgHaFj?rs=1&pid=ImgDetMain");
@@ -248,6 +198,8 @@
     background-color: #0056b3;
 }
 .surf-buttons a {
+    padding: 10px 20px;
+    font-size: 4vmin;
     color: #fff;
     text-decoration: none;
 }
@@ -262,6 +214,7 @@
 }
 
 .footer a{
+    font-size: 2vmin;
     padding: 20px;
     text-decoration: none;
     color: white; 
@@ -294,9 +247,3 @@
   .wtbtn i {
     margin-left: 5px;
 }
-
-  
-  body.dark .lkdiv {
-    color: black; 
-}
-  
