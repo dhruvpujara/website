@@ -16,7 +16,9 @@ const userroutes = require('./ROUTES/userroutes');
 const port = 2945;
 
 app.use(express.static(path.join(rootdir , 'public')));
+app.use('/public', express.static('public'));
 app.use(express.static(path.join(rootdir , 'JAVASCRIPT')));
+
 
 app.use(session({
   secret: 'dd2945', // Replace with a strong secret key
